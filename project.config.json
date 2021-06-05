@@ -26,7 +26,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.15.0",
 	"appid": "wx2c91a1c3cf3b6d92",
-	"projectname": "tjx-appt-applet",
+	"projectname": "tjx-cms-applet",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
