@@ -1,0 +1,44 @@
+<!--pages/user/personal/personal.wxml-->
+<view style="height:{{statusBarHeight}}px;background: #fff;"></view>
+<!-- 基本信息 -->
+<view class="basic">
+  <view class="info">
+    <view class="name">唐佳星</view>
+    <view class="tips">与其降低你的开支，不如去尝试增加你的收入。这就是努力的理由。</view>
+  </view>
+  <view class="headImg">
+    <image src="/assets/images/user/user.png"></image>
+  </view>
+</view>
+
+
+<!-- 功能列表 -->
+<view class="options">
+  <view class="list">
+    <image class="icon" src="/assets/images/user/msg.png"></image>
+    <view class="text">我的评论</view>
+    <image class="skip" src="/assets/images/user/right.png"></image>
+  </view>
+  <view class="list ">
+    <image class="icon" src="/assets/images/user/browse.png"></image>
+    <view class="text">我的浏览</view>
+    <image class="skip" src="/assets/images/user/right.png"></image>
+  </view>
+
+  <view class="list gap">
+    <image class="icon" src="/assets/images/user/info.png"></image>
+    <view class="text">个人信息</view>
+    <image class="skip" src="/assets/images/user/right.png"></image>
+  </view>
+  <view class="list">
+    <image class="icon" src="/assets/images/user/setting.png"></image>
+    <view class="text">设置</view>
+    <image class="skip" src="/assets/images/user/right.png"></image>
+  </view>
+</view>
+
+
+<!-- 退出登陆 -->
+<view class="quit">
+  退出登陆
+</view>

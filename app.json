@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/user/personal/personal",
+    "pages/cms/list/list",
+    "pages/user/login/login",
+    "pages/user/review/review",
+    "pages/cms/info/info"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#399eea",
+    "list": [
+      {
+        "pagePath": "pages/cms/list/list",
+        "text": "首 页",
+        "iconPath": "/assets/images/tabBar/index.png",
+        "selectedIconPath": "/assets/images/tabBar/index-act.png"
+      },
+      {
+        "pagePath": "pages/user/personal/personal",
+        "text": "我 的",
+        "iconPath": "/assets/images/tabBar/personal.png",
+        "selectedIconPath": "/assets/images/tabBar/personal-act.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
