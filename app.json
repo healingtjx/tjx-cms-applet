@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/user/login/login",
     "pages/user/personal/personal",
     "pages/cms/list/list",
-    "pages/user/login/login",
     "pages/user/review/review",
     "pages/cms/info/info"
   ],

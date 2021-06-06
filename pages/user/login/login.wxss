@@ -1,1 +1,48 @@
 /* pages/user/login/login.wxss */
+
+.logo {
+  display: block;
+  width: 350rpx;
+  height: 350rpx;
+  border-radius: 350rpx;
+  margin: auto;
+  margin-top: 100rpx;
+}
+
+.title {
+  display: block;
+  margin: auto;
+  height: 100rpx;
+  text-align: center;
+  font-size: 50rpx;
+  font-weight: 550;
+  margin-top: 30rpx;
+}
+
+.desc {
+  display: block;
+  margin: auto;
+  height: 100rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.btn {
+  padding: 0;
+  display: block;
+  margin: auto;
+  height: 80rpx;
+  width: 350rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color: #fff;
+  background: #07c160;
+  line-height: 80rpx;
+  border-radius: 45rpx;
+  font-weight: 550;
+  margin-top: 40rpx;
+}
+.phone {
+  background: #399eea;
+}

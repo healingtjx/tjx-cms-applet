@@ -1,2 +1,8 @@
 <!--pages/user/login/login.wxml-->
-<text>pages/user/login/login.wxml</text>
+<!-- 基本信息 -->
+<image class="logo" src="/assets/images/user/logo.png"></image>
+<view class="title">tjx-cmx-applet</view>
+<view class="desc">一款脚手架应用</view>
+<!-- 登陆按钮 -->
+<button class="btn" bindtap="getUserProfile" hidden="{{hasUserInfo}}">微信授权</button>
+<button class="btn" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" hidden="{{!hasUserInfo}}">手机号登陆</button>
