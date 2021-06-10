@@ -38,9 +38,21 @@ Page({
   /**
    * 手机号码登陆
    */
-  getPhoneNumber: function (e){
+  getPhoneNumber: function(e) {
     var msg = e.detail.errMsg;
-    if ('getPhoneNumber:ok' == msg){
+    var that = this;
+    if ('getPhoneNumber:ok' == msg) {
+      getApp().request.POST('/v1/auth/applet', {
+        code: that.data.sessionKey,
+        iv: e.detail.iv,
+        encryptedData: e.detail.encryptedData,
+        nickName: that.data.userInfo.nickName,
+        gender: that.data.userInfo.gender,
+        avatarUrl: that.data.userInfo.avatarUrl,
+      }, (res) => {
+        console.log(123)
+      });
+
       console.log(this.data.sessionKey)
       console.log(this.data.userInfo)
       console.log(e.detail.iv)
@@ -52,7 +64,7 @@ Page({
   /**
    * 判断登陆状态
    */
-  checkPrefsession: function () {
+  checkPrefsession: function() {
     var that = this;
     wx.checkSession({
       success() {
@@ -77,56 +89,56 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
     this.checkPrefsession();
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })
